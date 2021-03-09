@@ -31,6 +31,9 @@ section {
     width: 100%;
 }
 
+h1 {
+    font-size: 2rem;
+}
 
 h1,
 h2 {
@@ -56,6 +59,11 @@ h6 {
     margin-top: 0;
 }
 
+.list-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
 .list-instruction {
     margin-left: 18px;
 }
@@ -77,18 +85,10 @@ h6 {
     font-weight: 500;
 }
 
-.list-item {
+.time {
     display: grid;
-    grid-template-columns: auto 1fr;
-}
-
-
-
-
-
-.servings {
-    font-size: 10px;
-    margin-top: 2px;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 600px;
 }
 
 .time-instructions {
@@ -97,10 +97,16 @@ h6 {
     width: 75px; */
     width: 100px;
 }
+.servings {
+    font-size: 10px;
+    margin-top: 2px;
+}
 
 .icon {
     margin-right: 10px;
     margin-top: 4px;
+    color: black;
+    scale: transform(2);
 }
 
 #orange {
@@ -109,12 +115,6 @@ h6 {
 
 .baking-instructions {
     text-align: left;
-}
-
-.time {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    max-width: 600px;
 }
 
 #one {
@@ -132,9 +132,7 @@ h6 {
     margin-top: 20px;
 }
 
-h1 {
-    font-size: 2rem;
-}
+
 
 #source p {
     color: #a8a8a8;
@@ -200,8 +198,17 @@ h1 {
     }
 
     .time-and-servings {
-        color: white;
+        color: black;
         padding: 10px;
+    }
+
+    .time-instructions {
+        grid-template-rows: 1fr 1fr 1fr 1fr1;
+    }
+
+    .icon {
+        transform: scale(2);
+        margin-right: 20px;
     }
 
     #one {
