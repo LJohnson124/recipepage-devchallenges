@@ -210,7 +210,7 @@ p {
 }
 
 @media (max-width: 720px) {
-    h1 {
+    /* h1 {
         font-size: 24px;
     }
 
@@ -224,15 +224,15 @@ p {
     
     p {
         font-size: 14px;
-    }
+    } */
 
-    .intro-container, .intro-paragraph {
+    /* .intro-container, .intro-paragraph {
         font-size: 12px;
     }
 
     img {
         width: 100%;
-    }
+    } */
 
     #container {
         grid-template-columns: repeat(3, 1fr);
@@ -254,7 +254,7 @@ p {
         grid-row: 3;
     }
 
-    .bi-container {
+    /* .bi-container {
         display: flex;
         flex-direction: row;
         gap: 4px;
@@ -277,7 +277,7 @@ p {
     
     .bi-heading p {
         font-size: 10px;
-    }
+    } */
 
     .time {
         display: grid;
