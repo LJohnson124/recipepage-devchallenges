@@ -209,13 +209,34 @@ p {
     font-size: 14px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 720px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+
+    .intro-container, .intro-paragraph {
+        font-size: 12px;
+    }
+
     img {
         width: 100%;
     }
 
     #container {
         grid-template-columns: repeat(3, 1fr);
+        padding: 30px;
     }
 
     #header {
@@ -226,10 +247,46 @@ p {
         grid-column: 1 / span 3;
     }
 
+    /* Baking Instructions Section */
+
     #baking-instructions {
         grid-column: 1 / span 3;
         grid-row: 3;
     }
+
+    .bi-container {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+    }
+
+    .icon {
+        transform: scale(1);
+    }
+    
+    .bi-heading {
+        position: relative;
+        bottom: 0px;
+    
+        margin-bottom: 40px;
+    }
+    
+    .bi-heading h6 {
+        font-size: 8px;
+    }
+    
+    .bi-heading p {
+        font-size: 10px;
+    }
+
+    .time {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+    
+
+    /* End */
 
     #ingredients {
         grid-column: 1 / span 3;
